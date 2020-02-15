@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'reactstrap'
 import ListCreate from './ListCreate'
 import ItemTable from './ListTable'
 import ListEdit from './ListEdit'
+import Example from './ListCard'
 
 const ListIndex = (props) => {
     const [expItems, setExpItems] = useState([]);
@@ -40,20 +41,20 @@ const ListIndex = (props) => {
     return (
         <Container>
             <Row>
-                <Col  sm="3"></Col>
+                <Col sm="3"></Col>
                 <Col className="create" md="6">
                     <ListCreate fetchExpItems={fetchExpItems} token={props.token} />
                 </Col>
                 <Col sm="3"></Col>
-                </Row>
-                <Row>
-                    <Col></Col>
-                    <Col md="6">
-                        <ItemTable expItems={expItems} editUpdateItem={editUpdateItem} updateOn={updateOn} fetchExpItems={fetchExpItems} token={props.token} />
-                    </Col>
-                    <Col></Col>
-                </Row>
-                <Row>
+            </Row>
+            <Row>
+                <Col sm="3"></Col>
+                <Col md="6">
+                    <Example expItems={expItems} editUpdateItem={editUpdateItem} updateOn={updateOn} fetchExpItems={fetchExpItems} token={props.token} />
+                </Col>
+                <Col sm="3"></Col>
+            </Row>
+            <Row>
                 {updateActive ? <ListEdit listToUpdate={listToUpdate} updateOff={updateOff} token={props.token} fetchExpItems={fetchExpItems} /> : <></>}
             </Row>
         </Container>
