@@ -7,7 +7,7 @@ const ListEdit = (props) => {
     const [editWic, setEditWic] = useState(props.listToUpdate.wic);
     const itemUpdate = (event, item) => {
         event.preventDefault();
-        fetch(`${APIURL}/user/list/update/${props.listToUpdate.id}`, {
+        fetch(`${APIURL}user/list/update/${props.listToUpdate.id}`, {
             method: 'PUT',
             body: JSON.stringify({ list: { description: editDesc, wic: editWic } }),
             headers: new Headers({

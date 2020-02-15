@@ -8,7 +8,7 @@ const Login = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        fetch(`${APIURL}/wag/user/login`, {
+        fetch(`${APIURL}wag/user/login`, {
             method: 'POST',
             body: JSON.stringify(
                 {
@@ -70,7 +70,7 @@ export default Login
 
 //     const handleSubmit = (event) =>{
 //         event.preventDefault();
-//         fetch(`${APIURL}/wag/user/login`, {
+//         fetch(`${APIURL}wag/user/login`, {
 //             method: 'POST',
 //             body: JSON.stringify({user:{username:username, password:password}}),
 //             headers: new Headers({

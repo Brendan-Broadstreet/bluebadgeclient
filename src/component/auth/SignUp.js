@@ -80,7 +80,7 @@ export default Signup
     
 //     let handleSubmit = (event)=>{
 //         event.preventDefault();
-//         fetch(`${APIURL}/wag/user/createuser`, {
+//         fetch(`${APIURL}wag/user/createuser`, {
 //             method: 'POST',
 //             body: JSON.stringify({ user: { username: username, password: password} }),
 //             headers: new Headers({

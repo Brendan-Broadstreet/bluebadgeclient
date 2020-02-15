@@ -6,7 +6,7 @@ const Example = (props) => {
 
     const deleteItem = (item) => {
 
-        fetch(`${APIURL}/user/list/delete/${item.id}`, {
+        fetch(`${APIURL}user/list/delete/${item.id}`, {
             method: 'DELETE',
             headers: new Headers({
                 'Content-Type': 'application/json',

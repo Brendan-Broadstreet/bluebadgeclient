@@ -24,7 +24,7 @@ const ListIndex = (props) => {
 
 
     const fetchExpItems = () => {
-        fetch(`${APIURL}/user/list`, {
+        fetch(`${APIURL}user/list`, {
             method: 'GET',
             headers: new Headers({
                 'Content-Type': 'application/json',

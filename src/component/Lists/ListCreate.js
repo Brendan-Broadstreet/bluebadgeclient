@@ -8,7 +8,7 @@ const ListCreate = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        fetch(`${APIURL}/user/list`, {
+        fetch(`${APIURL}user/list`, {
             method: 'POST',
             body: JSON.stringify({ list: { description: description, wic: wic } }),
             headers: new Headers({
