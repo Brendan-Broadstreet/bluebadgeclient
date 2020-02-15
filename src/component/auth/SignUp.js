@@ -9,7 +9,7 @@ const[password, setPassword] = useState('')
 const handleSubmit = (event) => {
     event.preventDefault();
 
-    fetch(`${APIURL}/wag/user/createuser`, {
+    fetch(`${APIURL}wag/user/createuser`, {
     method: 'POST',
     body: JSON.stringify(
         {
