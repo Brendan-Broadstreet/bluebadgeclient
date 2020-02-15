@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import APIURL from '../../helpers/environment';
 
 const ListCreate = (props) => {
     const [wic, setWic] = useState('');
@@ -7,7 +8,7 @@ const ListCreate = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        fetch('http://localhost:3500/user/list', {
+        fetch(`${APIURL}/user/list`, {
             method: 'POST',
             body: JSON.stringify({ list: { description: description, wic: wic } }),
             headers: new Headers({

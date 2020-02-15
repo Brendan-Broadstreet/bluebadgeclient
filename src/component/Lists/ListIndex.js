@@ -1,9 +1,10 @@
 import React, { useState, useEffect, } from 'react';
 import { Container, Row, Col } from 'reactstrap'
 import ListCreate from './ListCreate'
-import ItemTable from './ListTable'
+// import ItemTable from './ListTable'
 import ListEdit from './ListEdit'
 import Example from './ListCard'
+import APIURL from '../../helpers/environment';
 
 const ListIndex = (props) => {
     const [expItems, setExpItems] = useState([]);
@@ -23,7 +24,7 @@ const ListIndex = (props) => {
 
 
     const fetchExpItems = () => {
-        fetch('http://localhost:3500/user/list', {
+        fetch(`${APIURL}/user/list`, {
             method: 'GET',
             headers: new Headers({
                 'Content-Type': 'application/json',

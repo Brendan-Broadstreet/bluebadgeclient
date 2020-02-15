@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {Form, FormGroup, Label, Input, Button} from 'reactstrap'
+import APIURL from '../../helpers/environment'
 
 const Signup = (props) => {
 const[username, setUsername] = useState('')
@@ -8,7 +9,7 @@ const[password, setPassword] = useState('')
 const handleSubmit = (event) => {
     event.preventDefault();
 
-    fetch('http://localhost:3500/wag/user/createuser', {
+    fetch(`${APIURL}/wag/user/createuser`, {
     method: 'POST',
     body: JSON.stringify(
         {
@@ -79,7 +80,7 @@ export default Signup
     
 //     let handleSubmit = (event)=>{
 //         event.preventDefault();
-//         fetch("http://localhost:3500/wag/user/createuser", {
+//         fetch(`${APIURL}/wag/user/createuser`, {
 //             method: 'POST',
 //             body: JSON.stringify({ user: { username: username, password: password} }),
 //             headers: new Headers({

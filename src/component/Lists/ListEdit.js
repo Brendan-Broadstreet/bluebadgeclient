@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import { Modal, ModalHeader, ModalBody, Form, Label, Input, Button, FormGroup } from 'reactstrap'
+import APIURL from '../../helpers/environment';
 
 const ListEdit = (props) => {
     const [editDesc, setEditDesc] = useState(props.listToUpdate.description);
     const [editWic, setEditWic] = useState(props.listToUpdate.wic);
     const itemUpdate = (event, item) => {
         event.preventDefault();
-        fetch(`http://localhost:3500/user/list/update/${props.listToUpdate.id}`, {
+        fetch(`${APIURL}/user/list/update/${props.listToUpdate.id}`, {
             method: 'PUT',
             body: JSON.stringify({ list: { description: editDesc, wic: editWic } }),
             headers: new Headers({
