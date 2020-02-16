@@ -18,7 +18,7 @@ const Example = (props) => {
     const itemMapper = () => {
         return props.expItems.map((item, index) => {
             return (
-                <div>
+                
                     <Container >
                         <Col >
                             <tr key={index} id="cardCon">
@@ -34,7 +34,7 @@ const Example = (props) => {
                             </tr>
                         </Col>
                     </Container>
-                </div>
+                
             );
         })
     }

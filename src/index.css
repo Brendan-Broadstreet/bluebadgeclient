@@ -1,6 +1,6 @@
 body {
   background: rgb(219,52,69);
-background: linear-gradient(90deg, rgba(219,52,69,1) 0%, rgba(254,193,5,1) 100%);
+  background: linear-gradient(90deg, rgba(219,52,69,1) 0%, rgba(254,193,5,1) 100%);
   /* background-image: url('https://i.pinimg.com/600x315/c6/4e/d4/c64ed4041a6b57f89ec81481f51bac72.jpg'); */
   /* background-repeat: no-repeat; */
   /* background-size: auto; */
