@@ -28,7 +28,7 @@ const Auth = (props) => {
     return (
         <div style={style.wrapper}>
             <Nav style={{backgroundColor: '#778899'}} tabs>
-                <NavItem className="authCard">
+                <NavItem id="authCard">
                     <NavLink
                         className={classnames({ active: activeTab === '1' })}
                         onClick={() => { toggle('1'); }}
