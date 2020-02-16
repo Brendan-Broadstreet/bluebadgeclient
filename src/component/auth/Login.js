@@ -38,7 +38,7 @@ return(
         <FormGroup>
             <Label htmlFor='password'></Label>
             <Input onChange={(e) => setPassword(e.target.value)} 
-            type='current-password' 
+            type='password' 
             placeholder= 'Password' 
             name='password' 
             value={password}/>

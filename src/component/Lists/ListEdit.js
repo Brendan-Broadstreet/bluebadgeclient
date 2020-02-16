@@ -32,7 +32,7 @@ const ListEdit = (props) => {
                         <Label htmlFor="description">Edit Description:</Label>
                         <Input name="description" value={editDesc} onChange={(e) => setEditDesc(e.target.value)} />
                     </FormGroup>
-                    <Button type="submit">Update the List!</Button>
+                    <Button color="outline-warning" type="submit">Update the List!</Button>
                 </Form>
             </ModalBody>
         </Modal>
