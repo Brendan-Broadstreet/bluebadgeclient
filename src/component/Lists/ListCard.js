@@ -19,7 +19,7 @@ const Example = (props) => {
         return props.expItems.map((item, index) => {
             return (
                 <div className="itemCards">
-                    <Container className='d-flex justify-content-around'>
+                    <Container className='justify-content-around'>
                         <Col >
                             <tr key={index} id="cardCon">
                                 <Row >
