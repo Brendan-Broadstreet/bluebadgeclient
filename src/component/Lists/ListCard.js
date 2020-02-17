@@ -58,6 +58,8 @@ const Example = (props) => {
         <>
             <h3 className="items">Your WAG List</h3>
             <hr />
+            <Container>
+                <Row>
             <tr>
                 <Card>
                     <CardTitle></CardTitle>
@@ -68,6 +70,8 @@ const Example = (props) => {
                     </CardBody>
                 </Card>
             </tr>
+            </Row>
+            </Container>
         </>
     )
 }
