@@ -60,6 +60,8 @@ const Example = (props) => {
             <hr />
             <Container>
                 <Row>
+                    <Col sm='1'></Col>
+                    <Col small='10'>
             <tr>
                 <Card>
                     <CardTitle></CardTitle>
@@ -70,6 +72,9 @@ const Example = (props) => {
                     </CardBody>
                 </Card>
             </tr>
+            </Col>
+            <Col sm='1'></Col>
+
             </Row>
             </Container>
         </>
