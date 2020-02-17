@@ -61,7 +61,7 @@ const Example = (props) => {
             <Container>
                 <Row>
                     <Col sm='1'></Col>
-                    <Col small='10'>
+                    <Col sm='10'>
             <tr>
                 <Card>
                     <CardTitle></CardTitle>
