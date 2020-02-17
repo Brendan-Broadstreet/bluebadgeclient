@@ -32,21 +32,23 @@ const Example = (props) => {
             return (
                 <div style={style.wrapper} className="itemCards">
                     <Container >
-                        <Col sm="3"></Col>
-                        <Col sm="6">
-                            <tr key={index} id="cardCon">
-                                <Row >
-                                    <Card className="cardDude" className="card text-white bg-dark">
-                                        <CardTitle id='wicBar'> * {item.wic} * </CardTitle>
-                                        <CardText>{item.description}
-                                            <br />
-                                            <Button color="outline-warning" onClick={() => { props.editUpdateItem(item); props.updateOn() }}>Edit</Button>
-                                            <Button color="outline-danger" onClick={() => { deleteItem(item) }}>Delete</Button></CardText>
-                                    </Card>
-                                </Row>
-                            </tr>
-                        </Col>
-                        <Col sm="3"></Col>
+                        <Row>
+                            <Col sm="3"></Col>
+                            <Col sm="6">
+                                <tr key={index} id="cardCon">
+                                    <Row >
+                                        <Card className="cardDude" className="card text-white bg-dark">
+                                            <CardTitle id='wicBar'> * {item.wic} * </CardTitle>
+                                            <CardText>{item.description}
+                                                <br />
+                                                <Button color="outline-warning" onClick={() => { props.editUpdateItem(item); props.updateOn() }}>Edit</Button>
+                                                <Button color="outline-danger" onClick={() => { deleteItem(item) }}>Delete</Button></CardText>
+                                        </Card>
+                                    </Row>
+                                </tr>
+                            </Col>
+                            <Col sm="3"></Col>
+                        </Row>
                     </Container>
                 </div>
             );
