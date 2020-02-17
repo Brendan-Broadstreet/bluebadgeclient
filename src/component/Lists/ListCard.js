@@ -2,6 +2,18 @@ import React from 'react';
 import { Card, Button, CardTitle, CardText, CardBody, Row, Col, Container, Table } from 'reactstrap';
 import APIURL from '../../helpers/environment';
 
+const style = {
+    wrapper: {
+        height: '75vh',
+        width: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: '1px 4px',
+    }
+}
+
 const Example = (props) => {
 
     const deleteItem = (item) => {
@@ -18,7 +30,7 @@ const Example = (props) => {
     const itemMapper = () => {
         return props.expItems.map((item, index) => {
             return (
-                <div className="itemCards">
+                <div style={style.wrapper} className="itemCards">
                     <Container className='justify-content-around'>
                         <Col >
                             <tr key={index} id="cardCon">
