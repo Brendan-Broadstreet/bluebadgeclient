@@ -18,8 +18,8 @@ const Example = (props) => {
     const itemMapper = () => {
         return props.expItems.map((item, index) => {
             return (
-                
-                    <Container >
+                <div className="itemCards">
+                    <Container className='d-flex justify-content-around'>
                         <Col >
                             <tr key={index} id="cardCon">
                                 <Row >
@@ -34,7 +34,7 @@ const Example = (props) => {
                             </tr>
                         </Col>
                     </Container>
-                
+                </div>
             );
         })
     }

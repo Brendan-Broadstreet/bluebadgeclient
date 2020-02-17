@@ -70,11 +70,14 @@ code {
   background-color: transparent;
 }
 
-@media only screen and (max-width : 768px) {
-  body.palette-primary.custom-background {
-  background-size: auto 100%;
-  }
-  }
+/* .itemCards{
+        width: '100%';
+        display: flex;
+        flexDirection: 'column';
+        justifyContent: center;
+        alignItems: center;
+        padding: 1px 4px;
+} */
 
 
 
