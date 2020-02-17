@@ -31,8 +31,9 @@ const Example = (props) => {
         return props.expItems.map((item, index) => {
             return (
                 <div style={style.wrapper} className="itemCards">
-                    <Container className='justify-content-around'>
-                        <Col >
+                    <Container >
+                        <Col></Col>
+                        <Col>
                             <tr key={index} id="cardCon">
                                 <Row >
                                     <Card className="cardDude" className="card text-white bg-dark">
@@ -45,6 +46,7 @@ const Example = (props) => {
                                 </Row>
                             </tr>
                         </Col>
+                        <Col></Col>
                     </Container>
                 </div>
             );
