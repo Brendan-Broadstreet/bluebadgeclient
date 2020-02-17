@@ -32,8 +32,8 @@ const Example = (props) => {
             return (
                 <div style={style.wrapper} className="itemCards">
                     <Container >
-                        <Col></Col>
-                        <Col>
+                        <Col sm="3"></Col>
+                        <Col sm="6">
                             <tr key={index} id="cardCon">
                                 <Row >
                                     <Card className="cardDude" className="card text-white bg-dark">
@@ -46,7 +46,7 @@ const Example = (props) => {
                                 </Row>
                             </tr>
                         </Col>
-                        <Col></Col>
+                        <Col sm="3"></Col>
                     </Container>
                 </div>
             );
