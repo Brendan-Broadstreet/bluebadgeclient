@@ -1,21 +1,26 @@
 body {
   background: rgb(219,52,69);
   background: linear-gradient(90deg, rgba(219,52,69,1) 0%, rgba(254,193,5,1) 100%);
-  /* background-image: url('https://i.pinimg.com/600x315/c6/4e/d4/c64ed4041a6b57f89ec81481f51bac72.jpg'); */
-  /* background-repeat: no-repeat; */
-  /* background-size: auto; */
-  /* background-position:center; */
-  /* background-attachment: fixed;
-  background-position: center;
+  background-image: url('./bg.jpg');
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
+  background-position:center;
+  background-attachment: fixed;
+  
   margin: 0;
+  width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* .container{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+} */
 
 h1{
   font-family: 'Montserrat', sans-serif;
@@ -43,12 +48,14 @@ h3{
   padding-right: 20px;
 }
 
-.card{
+.Card{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
   margin-bottom: 2em;
   margin-top: 0px;
   margin-left: 0px;
   background-color: transparent;
-
 }
 
 .add{
@@ -70,14 +77,20 @@ code {
   background-color: transparent;
 }
 
-/* .itemCards{
+.cardHolder{
         width: '100%';
         display: flex;
-        flexDirection: 'column';
-        justifyContent: center;
-        alignItems: center;
+        justify-content: space-around;
+        align-items: space-around;
+}
+
+.card-text{
+        width: '100%';
+        display: flex;
+        justify-content: space-around;
+        align-items: space-around;
         padding: 1px 4px;
-} */
+}
 
 
 

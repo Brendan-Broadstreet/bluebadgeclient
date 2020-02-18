@@ -8,7 +8,7 @@ const style = {
         width: '100%',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center',
+        justifyContent: 'space-around',
         alignItems: 'center',
         padding: '1px 4px',
     }
@@ -40,6 +40,8 @@ const Example = (props) => {
                                         <Card className="cardDude" className="card text-white bg-dark">
                                             <CardTitle id='wicBar'> * {item.wic} * </CardTitle>
                                             <CardText>{item.description}
+                                            </CardText>
+                                            <CardText>
                                                 <br />
                                                 <Button color="outline-warning" onClick={() => { props.editUpdateItem(item); props.updateOn() }}>Edit</Button>
                                                 <Button color="outline-danger" onClick={() => { deleteItem(item) }}>Delete</Button></CardText>
@@ -59,9 +61,9 @@ const Example = (props) => {
             <h3 className="items">Your WAG List</h3>
             <hr />
             <Container>
-                <Row>
-                    <Col sm='2'></Col>
-                    <Col sm='10'>
+                <Row className='cardHolder'>
+                    
+                    
             <tr>
                 <Card>
                     <CardTitle></CardTitle>
@@ -72,8 +74,8 @@ const Example = (props) => {
                     </CardBody>
                 </Card>
             </tr>
-            </Col>
-            <Col sm='1'></Col>
+            
+           
 
             </Row>
             </Container>

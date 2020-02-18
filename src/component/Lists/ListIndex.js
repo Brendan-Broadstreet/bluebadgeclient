@@ -49,11 +49,11 @@ const ListIndex = (props) => {
                 <Col sm="3"></Col>
             </Row>
             <Row>
-                <Col sm="3"></Col>
-                <Col md="6">
+                <Col sm="1"></Col>
+                <Col md="10">
                     <Example expItems={expItems} editUpdateItem={editUpdateItem} updateOn={updateOn} fetchExpItems={fetchExpItems} token={props.token} />
                 </Col>
-                <Col sm="3"></Col>
+                <Col sm="1"></Col>
             </Row>
             <Row>
                 {updateActive ? <ListEdit listToUpdate={listToUpdate} updateOff={updateOff} token={props.token} fetchExpItems={fetchExpItems} /> : <></>}
