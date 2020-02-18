@@ -4,13 +4,14 @@ import APIURL from '../../helpers/environment';
 
 const style = {
     wrapper: {
-        height: '75vh',
+        height: '50vh',
         width: '100%',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-around',
         alignItems: 'center',
         padding: '1px 4px',
+        backgroundColor: 'transparent'
     }
 }
 
@@ -44,7 +45,11 @@ const Example = (props) => {
                                             <CardText>
                                                 <br />
                                                 <Button color="outline-warning" onClick={() => { props.editUpdateItem(item); props.updateOn() }}>Edit</Button>
-                                                <Button color="outline-danger" onClick={() => { deleteItem(item) }}>Delete</Button></CardText>
+                                                <Button color="outline-danger" onClick={() => { deleteItem(item) }}>Delete</Button>
+                                                <br />
+                                                <br />
+                                                </CardText>
+                                                <CardText></CardText>
                                         </Card>
                                     </Row>
                                 </tr>
