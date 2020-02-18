@@ -28,9 +28,6 @@ return (
     <div>
         <h1>Welcome to</h1>
         <h1>WAG List</h1>
-
-        
-
         <Form onSubmit={handleSubmit}>
         <FormGroup>
             <Label htmlFor='username'></Label>
