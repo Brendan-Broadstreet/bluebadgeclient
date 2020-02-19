@@ -4,7 +4,7 @@ import Auth from './component/auth/Auth';
 import ListIndex from './component/Lists/ListIndex';
 
 function App() {
-  const [sessionToken, setSessionToken] = useState('');
+  const [sessionToken, setSessionToken] = useState(undefined);
   
   useEffect(() => {
     if (localStorage.getItem('token')){
@@ -15,7 +15,7 @@ function App() {
   const updateToken = (newToken) => {
     localStorage.setItem('token', newToken);
     setSessionToken(newToken);
-    console.log(sessionToken);
+    
   }
 
   const clearToken=()=>{
@@ -28,7 +28,7 @@ function App() {
   }
   return (
     <div >
-      <Sitebar clickLogout={clearToken}/>
+      <Sitebar clickLogout={clearToken} token={sessionToken}/>
       {protectedViews()}
     </div>
   );

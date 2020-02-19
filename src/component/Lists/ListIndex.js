@@ -7,6 +7,7 @@ import Example from './ListCard'
 import APIURL from '../../helpers/environment';
 
 const ListIndex = (props) => {
+    const [sessionToken, setSessionToken]= useState(props.token)
     const [expItems, setExpItems] = useState([]);
     const [updateActive, setUpdateActive] = useState(false);
     const [listToUpdate, setListToUpdate] = useState('')
@@ -40,6 +41,7 @@ const ListIndex = (props) => {
     }, [])
 
     return (
+        
         <Container>
             <Row>
                 <Col sm="3"></Col>

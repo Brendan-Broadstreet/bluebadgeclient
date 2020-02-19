@@ -6,7 +6,11 @@ body {
   background-size: cover;
   background-position:center;
   background-attachment: fixed;
-  
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
   margin: 0;
   width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -19,8 +23,9 @@ body {
 .itemCards{
   display: flex;
   width: 100%;
-  justify-content: space-around;
   background-color: transparent;
+  align-items: center;
+  margin: auto;
 }
 
 h1{
@@ -31,6 +36,9 @@ text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 
 }
 .card-body{
   background-color: transparent;
+  align-items: center;
+  
+
 }
 h3{
   font-family: 'Montserrat', sans-serif;
@@ -56,16 +64,19 @@ h3{
   display: flex;
   width: 100%;
   justify-content: space-around;
-  margin-bottom: 0%;
-  margin-top: 0px;
-  margin-left: 0px;
+  align-items: center;
+  
 }
 .card{
   background-color: transparent;
+  align-items: center;
+  
 }
 div.card{
   background-color: transparent;
+  
 }
+
 
 .add{
   padding-top: 1em;
@@ -90,7 +101,7 @@ code {
 .cardHolder{
         width: '100%';
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: stretch;
 }
 
@@ -115,7 +126,7 @@ code {
   text-align: center;
 } */
 #description{
-  font-size: 5vh;
+  font-size: 15vh;
 }
 /* .blankRow{
   background-color: black;
