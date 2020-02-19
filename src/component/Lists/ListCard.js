@@ -46,6 +46,7 @@ const Example = (props) => {
                                             <CardText>
                                                 <br />
                                                 <Button color="outline-warning" onClick={() => { props.editUpdateItem(item); props.updateOn() }}>Edit</Button>
+                                                
                                                 <Button color="outline-danger" onClick={() => { deleteItem(item) }}>Delete</Button>
                                                 <br />
                                                 <br />

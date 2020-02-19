@@ -109,7 +109,9 @@ hr{
   }
   #cardCon{
     background-color: transparent;
-    box-shadow: 17px 17px 18px 5px rgba(0,0,0,0.84);
+    -webkit-box-shadow: 10px 10px 29px 9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 29px 9px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 29px 9px rgba(0,0,0,0.75);
 
   }
   
@@ -146,7 +148,7 @@ hr{
   }
   @media (min-width: 350px) {
     body {
-      background-image: linear-gradient(to bottom, #206ad9, #3a76dc, #4d82df, #5f8de2, #7099e4, #7099e4, #7099e4, #7099e4, #5f8de2, #4d82df, #3a76dc, #206ad9);
+      background-image: linear-gradient(to bottom, #206ad9, #3a76dc, #4d82df, #5f8de2, #7099e4, #6e94dc, #6c90d4, #6a8bcc, #5576b8, #4062a4, #2a4e90, #0d3b7d);
     }
     .addHolder{
       padding-right: 15%;
