@@ -37,7 +37,6 @@ text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 
 .card-body{
   background-color: transparent;
   align-items: center;
-  box-shadow: 5px 5px 15px 5px #000000;
 }
 h3{
   font-family: 'Montserrat', sans-serif;
