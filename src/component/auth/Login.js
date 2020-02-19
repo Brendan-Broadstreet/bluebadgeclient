@@ -31,7 +31,7 @@ return(
             <Label htmlFor='username'></Label>
             <Input onChange={(e) => setUsername(e.target.value)} 
             type='email' 
-            placeholder='Email' 
+            placeholder='Welcome' 
             name='username' 
             value={username} />
         </FormGroup>
@@ -39,7 +39,7 @@ return(
             <Label htmlFor='password'></Label>
             <Input onChange={(e) => setPassword(e.target.value)} 
             type='password' 
-            placeholder= 'Password' 
+            placeholder= 'Back' 
             name='password' 
             value={password}/>
         </FormGroup>

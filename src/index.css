@@ -25,7 +25,10 @@ body {
 }
 #authPan:after{
   box-sizing: border-box;
+}
 
+.tabAct{
+  background-color: yellowgreen;
 }
 
 .itemCards{
@@ -41,7 +44,8 @@ h1{
   font-family: 'Montserrat', sans-serif;
   color: #444444;
   background: transparent;
-  text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+  text-shadow: -1px 5px 12px rgba(0,0,0,0.63);
+
 }
 .card-body{
   background-color: transparent;
@@ -50,7 +54,12 @@ h1{
 h3{
   font-family: 'Montserrat', sans-serif;
   color: cornsilk;
-  text-shadow: 2px 1px 1px rgba(255,255,255,.2);}
+  text-shadow: 1px 15px 12px rgba(0,0,0,0.63);
+}
+hr{
+  border: 2px solid darkblue;
+  border-radius: 5px;
+}
   .items{
     padding-top: 1em;
     text-align: center;
@@ -66,9 +75,6 @@ h3{
     padding-right: 20px;
   }
   
-  
-  
-  
   .Card{
     display: flex;
     width: 100%;
@@ -77,8 +83,9 @@ h3{
   }
   .card{
     background-color: transparent;
-    align-items: center;  
-  }
+    align-items: center; 
+    }
+    
   div.card{
     background-color: transparent;
     border: none;
@@ -102,6 +109,8 @@ h3{
   }
   #cardCon{
     background-color: transparent;
+    box-shadow: 17px 17px 18px 5px rgba(0,0,0,0.84);
+
   }
   
   .cardHolder{
@@ -115,6 +124,7 @@ h3{
     display: flex;
     justify-content: center;
     padding-right: 45px;
+    padding-top: 15px;
   }
   .card-text{
     width: '100%';
@@ -123,14 +133,20 @@ h3{
     align-items: stretch;
     padding: 1px 4px;
   }
-  
-  
+  .nav-link{
+    padding: .5rem 2.12rem;
+    border-top-left-radius:100px;
+    }
+    .nav-link.active{
+      background-color: #B0C4DE !important;
+    }
+
   #description{
     font-size: 15vh;
   }
   @media (min-width: 350px) {
     body {
-      background-image: linear-gradient(to bottom, #0f00ff, #044cff, #3873ff, #6595ff, #92b4fe, #92b4fe, #92b4fe, #92b4fe, #6595ff, #3873ff, #044cff, #0f00ff);
+      background-image: linear-gradient(to bottom, #206ad9, #3a76dc, #4d82df, #5f8de2, #7099e4, #7099e4, #7099e4, #7099e4, #5f8de2, #4d82df, #3a76dc, #206ad9);
     }
     .addHolder{
       padding-right: 15%;
@@ -157,6 +173,9 @@ h3{
     }
     .addHolder{
       padding-right: 19%;
+    }
+    div.card{
+      margin-left: 10px;
     }
   }
   

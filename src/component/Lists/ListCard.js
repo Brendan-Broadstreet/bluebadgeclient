@@ -64,25 +64,18 @@ const Example = (props) => {
     }
     return (
         <>
-            <h3 className="items">Your WAG List</h3>
-            <hr />
+            <h3 className="items">Your WAG List:</h3>
             <Container>
                 <Row className='cardHolder'>
-                    
-                    
             <tr>
                 <Card>
                     <CardTitle></CardTitle>
                     <CardText></CardText>
-
                     <CardBody>
                         {itemMapper()}
                     </CardBody>
                 </Card>
             </tr>
-            
-           
-
             </Row>
             </Container>
         </>

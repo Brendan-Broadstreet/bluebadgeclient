@@ -51,6 +51,7 @@ const ListIndex = (props) => {
                 </Col>
                 <Col xs='1' sm='2' md='3' lg='4'></Col>
             </Row>
+            <hr />
             <Row>
                 <Col sm="1"></Col>
                 <Col md="10">

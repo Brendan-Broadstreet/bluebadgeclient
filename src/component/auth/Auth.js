@@ -38,7 +38,6 @@ const Auth = (props) => {
                         onClick={() => { toggle('1'); }}
                     >L O G I N
                     </NavLink>
-
                 </NavItem>
                 <NavItem>
                     <NavLink
@@ -49,7 +48,7 @@ const Auth = (props) => {
                 </NavItem>
             </Nav >
             <TabContent style={{backgroundColor: '#B0C4DE'}} activeTab={activeTab} >
-                <TabPane  tabId='1'>
+                <TabPane tabId='1'>
                     <Row>
                         <Col style={{paddingRight: '40px'}}>
                             <Card body>
@@ -60,7 +59,7 @@ const Auth = (props) => {
                 </TabPane>
                 <TabPane tabId='2'>
                     <Row>
-                        <Col md='12'>
+                        <Col style={{paddingRight: '40px'}}>
                             <Card body>
                                 <Signup updateToken={props.updateToken} />
                             </Card>
