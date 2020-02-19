@@ -8,7 +8,7 @@ const style = {
         width: '100%',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'space-around',
+        justifyContent: 'flex-start',
         alignItems: 'center',
         padding: '1px 4px',
         margin: 'auto',

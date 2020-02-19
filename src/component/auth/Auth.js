@@ -3,9 +3,7 @@ import Signup from './SignUp'
 import Login from './Login'
 import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Row, Col } from 'reactstrap'
 import classnames from 'classnames'
-
-
-
+let bgImg = '/bg.jpg'
 
 const style = {
     wrapper: {
@@ -16,6 +14,12 @@ const style = {
         justifyContent: 'center',
         alignItems: 'center',
         padding: '1px 4px',
+        backgroundImage: 'url(' + bgImg + ')',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPosition:'center',
+        backgroundAttachment: 'fixed',
+        
     }
 }
 
@@ -44,10 +48,10 @@ const Auth = (props) => {
                     </NavLink>
                 </NavItem>
             </Nav >
-            <TabContent activeTab={activeTab} >
+            <TabContent style={{backgroundColor: '#B0C4DE'}} activeTab={activeTab} >
                 <TabPane  tabId='1'>
                     <Row>
-                        <Col>
+                        <Col style={{paddingRight: '40px'}}>
                             <Card body>
                                 <Login updateToken={props.updateToken} />
                             </Card>

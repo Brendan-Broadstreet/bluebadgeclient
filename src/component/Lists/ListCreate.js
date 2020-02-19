@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input, Container, Row, Col } from 'reactstrap';
 import APIURL from '../../helpers/environment';
 
 const ListCreate = (props) => {
@@ -26,14 +26,17 @@ const ListCreate = (props) => {
 
     return (
         <>
-            <div className="container">
-
-                <div className="row">
+            <Container>
+                <Row className="addHolder">
                     <Form onSubmit={handleSubmit}>
-
-                        <div className="col-sm-12">
-                            <h3 >Add an Item</h3></div>
-                        <div className="col-xs-10">
+                        
+                        <Col>
+                            <div>
+                                <h3>Add an Item</h3>
+                            </div>
+                        </Col>
+                        <Col></Col>
+                        <div >
                             <FormGroup className="add">
                                 <Label htmlFor="description" />
                                 <Input name="description" placeholder="Your Description" required value={description} onChange={(e) => setDescription(e.target.value)} />
@@ -49,8 +52,9 @@ const ListCreate = (props) => {
                         <div className="col-xs-12"></div>
                         <Button type="submit" style={{ backgroundColor: "#0d0cb5" }}>Add Item</Button>
                     </Form>
-                </div>
-            </div>
+
+                </Row>
+            </Container>
         </>
     )
 }

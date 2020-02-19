@@ -6,6 +6,7 @@ import ListEdit from './ListEdit'
 import Example from './ListCard'
 import APIURL from '../../helpers/environment';
 
+
 const ListIndex = (props) => {
     const [sessionToken, setSessionToken]= useState(props.token)
     const [expItems, setExpItems] = useState([]);
@@ -44,11 +45,11 @@ const ListIndex = (props) => {
         
         <Container>
             <Row>
-                <Col sm="3"></Col>
-                <Col className="create" md="6">
+                <Col xs='1' sm='2' md='3' lg='4'></Col>
+                <Col className="create" xs='10' sm='8' md='6' lg='4'>
                     <ListCreate fetchExpItems={fetchExpItems} token={props.token} />
                 </Col>
-                <Col sm="3"></Col>
+                <Col xs='1' sm='2' md='3' lg='4'></Col>
             </Row>
             <Row>
                 <Col sm="1"></Col>
