@@ -109,6 +109,8 @@ hr{
   }
   #cardCon{
     background-color: transparent;
+    -webkit-appearance: none;
+      border-radius: 1px;
     -webkit-box-shadow: 10px 10px 29px 9px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 29px 9px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 29px 9px rgba(0,0,0,0.75);
