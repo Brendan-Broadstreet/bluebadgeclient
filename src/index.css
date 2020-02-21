@@ -155,15 +155,6 @@ hr{
     .addHolder{
       padding-right: 15%;
     }
-    #cardCon{
-      background-color: transparent;
-      -webkit-appearance: none;
-      border-radius: 1px;
-      -webkit-box-shadow: 3px 3px 9px 3px rgba(0,0,0,14);
-      -moz-box-shadow: 3px 3px 9px 3px rgba(0,0,0,14);
-      box-shadow: 3px 3px 9px 3px rgba(0,0,0,14);
-  
-    }
   }
   
   @media (min-width: 500px) {
