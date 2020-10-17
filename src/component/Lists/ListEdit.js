@@ -25,12 +25,12 @@ const ListEdit = (props) => {
             <ModalBody>
                 <Form onSubmit={itemUpdate}>
                     <FormGroup>
-                        <Label htmlFor="wic">Edit Inventory Code:</Label>
-                        <Input name="wic" value={editWic} onChange={(e) => setEditWic(e.target.value)} />
+                        <Label  htmlFor="wic">Edit Inventory Code:</Label>
+                        <Input  style={{padding: '0'}} name="wic" value={editWic} onChange={(e) => setEditWic(e.target.value)} />
                     </FormGroup>
                     <FormGroup>
                         <Label htmlFor="description">Edit Description:</Label>
-                        <Input name="description" value={editDesc} onChange={(e) => setEditDesc(e.target.value)} />
+                        <Input style={{padding: '0'}} name="description" value={editDesc} onChange={(e) => setEditDesc(e.target.value)} />
                     </FormGroup>
                     <Button color="warning" type="submit">Update the List!</Button>
                 </Form>
