@@ -45,7 +45,7 @@ const ListCreate = (props) => {
                                     name="wic"
                                     type="number"
                                     minLength="6"
-                                    required placeholder="WIC #"
+                                    required placeholder="Inventory Code"
                                     value={wic} onChange={(e) => setWic(e.target.value)} />
                             </FormGroup>
                         </div>

@@ -27,7 +27,8 @@ const handleSubmit = (event) => {
 return (
     <div>
         <h1>Welcome to</h1>
-        <h1>WAG List</h1>
+        <h1>Catalog</h1>
+        <h1>Quick</h1>
         <Form onSubmit={handleSubmit}>
         <FormGroup>
             <Label htmlFor='username'></Label>

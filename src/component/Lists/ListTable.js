@@ -40,7 +40,7 @@ const ItemTable = (props) => {
     }
     return (
         <>
-            <h3 className="items">Your WAG List</h3>
+            <h3 className="items">Your Catalog</h3>
             <hr />
             <Table striped hover dark>
                 <thead>

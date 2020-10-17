@@ -17,7 +17,7 @@ const Sitebar = (props) => {
     }
     return (
         <Navbar color="primary" light expand="md">
-            <NavbarBrand className="text-light" href="/">WAG List</NavbarBrand>
+            <NavbarBrand className="text-light" href="/">Catalog Quick</NavbarBrand>
             <NavbarToggler onClick={toggle}/>
             <Collapse isOpen={isOpen} navbar>
                 <Nav className="ml-auto" navbar>
