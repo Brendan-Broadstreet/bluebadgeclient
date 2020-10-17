@@ -3,7 +3,7 @@ import Signup from './SignUp'
 import Login from './Login'
 import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Row, Col } from 'reactstrap'
 import classnames from 'classnames'
-let bgImg = '/bg.jpg'
+// let bgImg = '/bg.jpg'
 
 const style = {
     wrapper: {
@@ -14,7 +14,7 @@ const style = {
         justifyContent: 'center',
         alignItems: 'center',
         padding: '1px 4px',
-        backgroundImage: 'url(' + bgImg + ')',
+        // backgroundImage: 'url(' + bgImg + ')',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         backgroundPosition:'center',
